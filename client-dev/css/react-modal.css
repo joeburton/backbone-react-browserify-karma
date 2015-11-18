@@ -1,0 +1,133 @@
+
+/* Generic modal classes */
+
+.modal-overlay {
+	position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.request-success.hidden,
+.request-processing.hidden,
+.modal-overlay.hidden,
+.quote-form.hidden,
+.modals.hidden {
+	display: none;
+}
+
+.modals {
+    position: absolute;
+    padding-top: 15px;
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+}
+
+.modals .modal {
+	background-color: #fff;
+	margin-top: 30px;
+	min-width: 200px;
+	max-width: 480px;
+	min-height: 400px;
+	padding: 15px;
+	margin: 0 auto;
+}
+
+.close-modal {
+	text-align: right;
+    float: right;
+    display: block;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.request-processing {
+    background: url(../images/icons/loader.gif) no-repeat center center;
+    width: 100%;
+    height: 400px;
+    background-size: 60px 60px;	
+}
+
+.request-success {
+    width: 260px;
+    height: 250px;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+.request-success .thankyou {
+    font-family: 'ITCAvantGardeStd-Bold', Sans-Serif;
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: #f08122;
+}
+
+.request-success p {
+    font-family: 'Aspira Medium',Verdana,Sans-Serif;
+    padding: 0;
+}
+
+
+
+/* Modal speific classes = */
+.modal-request-quote select {
+    background: #e0e0e0;
+    color: #575756;
+    width: 100%;
+    box-sizing: border-box;
+    height: 35px;
+    border: 0;
+    font-size: 14px;
+    padding-left: 10px;
+    margin-bottom: 3px;
+}
+
+.modal-request-quote .form-item {
+    margin-bottom: 10px;
+}
+
+.modal-request-quote .send {
+    background-color: #4b554a;
+    min-width: 164px;
+    height: 40px;
+    border: 0;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    text-indent: 10px;
+}
+
+.modal-request-quote input[type="text"] {
+    border-bottom: 5px solid #e0e0e0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    background: #e0e0e0;
+    color: #575756;
+    width: 100%;
+    box-sizing: border-box;
+    height: 35px;
+    font-size: 14px;
+    padding-left: 10px;
+    margin-bottom: 3px;
+}
+
+.modal-request-quote  textarea {
+    font-family: 'Aspira Medium',Verdana,Sans-Serif;
+    box-sizing: border-box;
+    border-bottom: 5px solid #e0e0e0; 
+    background: #e0e0e0;
+    width: 100%;
+    height: 80px;
+    border: 0;
+    font-size: 14px;
+    color: #575756;
+    padding-left: 10px;
+}
+
+.modal-request-quote .has-error.form-item input[type="text"],
+.modal-request-quote .has-error.form-item textarea {
+    border-bottom: 5px solid #f08122; 
+}
